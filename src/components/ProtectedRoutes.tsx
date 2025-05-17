@@ -12,7 +12,7 @@ const ProtectedRoutes = ({
     allowGuest?: boolean;
 }) => {
     const { user, hasPermission } = useAuth();
-    console.log("ProtectedRoutes", user);
+    console.log("User", user, "Allow Guest", allowGuest);
 
     //Allow guest user if `allowGuest` is true
     if (allowGuest && !user) {

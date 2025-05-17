@@ -4,7 +4,7 @@ import type { User } from '../context/AuthContext'
 const API_URL = "http://localhost:4000"
 
 export interface Product {
-    id: string;
+    id: number;
     name: string;
     description: string;
     price: number;
@@ -39,7 +39,7 @@ export const fetchProducts = async (): Promise<Product[] | null> => {
 }
 
 //delete product
-export const deleteProduct = async (id: string): Promise<void> => {
+export const deleteProduct = async (id: number): Promise<void> => {
     try {
         await axios.delete(`${API_URL}/products/${id}`);
     } catch (error) {
