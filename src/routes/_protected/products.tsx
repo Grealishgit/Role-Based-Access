@@ -31,7 +31,7 @@ function RouteComponent() {
   }
 
   return (
-    <div className="flex flex-col md:mt-1 pt-20 items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col md:mt-1 mt-5 items-center justify-center min-h-screen bg-gray-100">
       <div className='pt-10 items-center'>
         <h2 className="text-2xl text-center font-bold">Products</h2>
         <p className="mt-2 text-center text-gray-600">You can view the products here.</p>
